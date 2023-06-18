@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { RiSunLine, RiMoonClearLine } from "react-icons/ri";
+import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItemType {
@@ -38,17 +38,17 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header data-theme="light" className="w-full mx-auto shadow">
+    <header className="w-full mx-auto shadow-lg fixed top-0 z-50 data-[dark]: shadow-slate-500/10">
       <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Akmal Kamarudin</a>
+        <div className="flex-1 ">
+          <a className="btn btn-ghost normal-case text-2xl">Akmal Kamarudin</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             {NavItem.map((item, id) => {
               return (
-                <li>
-                  <a key={id}>{item.label}</a>
+                <li key={id}>
+                  <a>{item.label}</a>
                 </li>
               );
             })}
@@ -67,14 +67,14 @@ const Navbar = () => {
               </details>
             </li>
 
-            <li className="mx-2">
+            <li>
               {currentTheme === "dark" ? (
-                <a>
-                  <RiSunLine />
+                <a onClick={() => setTheme("light")}>
+                  <RiSunLine size={20} />
                 </a>
               ) : (
-                <a>
-                  <RiMoonClearLine />
+                <a onClick={() => setTheme("dark")}>
+                  <RiMoonClearFill size={20} />
                 </a>
               )}
             </li>

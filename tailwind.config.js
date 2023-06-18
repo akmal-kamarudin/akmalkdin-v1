@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +15,7 @@ module.exports = {
       },
     },
   },
+
   plugins: [require("daisyui")],
 
   // daisyUI config (optional - here are the default values)
@@ -27,4 +29,6 @@ module.exports = {
     prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
   },
+
+  darkMode: ["class", '[data-theme="dark"]'],
 };
