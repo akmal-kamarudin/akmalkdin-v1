@@ -38,7 +38,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header data-theme="light">
+    <header data-theme="light" className="w-full mx-auto shadow">
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Akmal Kamarudin</a>
@@ -67,15 +67,15 @@ const Navbar = () => {
               </details>
             </li>
 
-            <li>
+            <li className="mx-2">
               {currentTheme === "dark" ? (
-                <button>
+                <a>
                   <RiSunLine />
-                </button>
+                </a>
               ) : (
-                <button>
+                <a>
                   <RiMoonClearLine />
-                </button>
+                </a>
               )}
             </li>
           </ul>
