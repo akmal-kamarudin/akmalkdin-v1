@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { IoMdMenu, IoMdClose, IoMdOpen } from "react-icons/io";
 
 interface NavItemType {
   label: string;
@@ -38,11 +38,21 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto shadow-lg fixed top-0 z-50 data-[dark]: shadow-slate-500/10">
+    <header className="w-full mx-auto shadow-lg fixed top-0 z-50 dark:shadow-gray-500/10">
       <div className="navbar bg-base-100">
-        <div className="flex-1 ">
-          <a className="btn btn-ghost normal-case text-2xl">Akmal Kamarudin</a>
+        <div className="flex items-center justify-between">
+          <div className="flex-1">
+            <a className="btn btn-ghost normal-case text-2xl">
+              Akmal Kamarudin
+            </a>
+          </div>
+          <div className="md:hidden">
+            <a className="btn btn-ghost">
+              {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
+            </a>
+          </div>
         </div>
+
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             {NavItem.map((item, id) => {
