@@ -1,6 +1,7 @@
 "use client";
 import "../style/globals.css";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 
@@ -22,6 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider enableSystem={true} attribute="data-theme">
           <Navbar />
+          <Hero />
+
           {children}
         </ThemeProvider>
       </body>

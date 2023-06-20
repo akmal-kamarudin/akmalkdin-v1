@@ -68,7 +68,7 @@ const Navbar = () => {
         <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-cyan-600/10">
           <div className="navbar bg-base-100 ">
             <div className="flex-1">
-              <a className="btn btn-ghost normal-case text-xl my-1">
+              <a className="btn btn-ghost normal-case text-2xl font-bold my-1">
                 Akmal Kamarudin
               </a>
             </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
 
             <div className={"hidden md:block"}>
               <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 text-base font-bold">
                   {renderNavItem}
                   {renderTheme()}
                 </ul>
@@ -101,7 +101,7 @@ const Navbar = () => {
           className="drawer-overlay"
           onClick={() => setNavbar(!navbar)}
         ></label>
-        <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content text-base font-bold">
           <li className="items-end">
             <label
               htmlFor="my-drawer-4"
