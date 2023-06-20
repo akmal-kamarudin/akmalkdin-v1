@@ -15,20 +15,20 @@ const NavItem: Array<NavItemType> = [
     page: "home",
   },
   {
-    label: "About",
-    page: "about",
+    label: "About Me",
+    page: "about me",
   },
   {
     label: "Projects",
     page: "projects",
   },
   {
-    label: "Blog",
-    page: "blog",
+    label: "Blogs",
+    page: "blogs",
   },
   {
-    label: "Resume",
-    page: "resume",
+    label: "Contact",
+    page: "contact",
   },
 ];
 
@@ -37,61 +37,85 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
+  const renderNavItem = NavItem.map((item, id) => {
+    return (
+      <li key={id}>
+        <a>{item.label}</a>
+      </li>
+    );
+  });
+
+  const renderTheme = () => {
+    return (
+      <li>
+        {currentTheme === "dark" ? (
+          <a onClick={() => setTheme("light")}>
+            <RiSunLine size={20} />
+          </a>
+        ) : (
+          <a onClick={() => setTheme("dark")}>
+            <RiMoonClearFill size={20} />
+          </a>
+        )}
+      </li>
+    );
+  };
+
   return (
-    <header className="w-full mx-auto shadow-lg fixed top-0 z-50 dark:shadow-gray-500/10">
-      <div className="navbar bg-base-100">
-        <div className="flex items-center justify-between">
-          <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-2xl">
-              Akmal Kamarudin
-            </a>
-          </div>
-          <div className="md:hidden">
-            <a className="btn btn-ghost">
-              {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
-            </a>
-          </div>
-        </div>
+    <div className="drawer drawer-end">
+      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content">
+        <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-cyan-600/10">
+          <div className="navbar bg-base-100 ">
+            <div className="flex-1">
+              <a className="btn btn-ghost normal-case text-xl my-1">
+                Akmal Kamarudin
+              </a>
+            </div>
 
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            {NavItem.map((item, id) => {
-              return (
-                <li key={id}>
-                  <a>{item.label}</a>
-                </li>
-              );
-            })}
+            <div className="md:hidden">
+              <label
+                htmlFor="my-drawer-4"
+                className="drawer-button btn btn-ghost"
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
+              </label>
+            </div>
 
-            <li>
-              <details>
-                <summary>Theme</summary>
-                <ul className="p-2 bg-base-100">
-                  <li>
-                    <a>Link 1</a>
-                  </li>
-                  <li>
-                    <a>Link 2</a>
-                  </li>
+            <div className={"hidden md:block"}>
+              <div className="flex-none">
+                <ul className="menu menu-horizontal px-1">
+                  {renderNavItem}
+                  {renderTheme()}
                 </ul>
-              </details>
-            </li>
-
-            <li>
-              {currentTheme === "dark" ? (
-                <a onClick={() => setTheme("light")}>
-                  <RiSunLine size={20} />
-                </a>
-              ) : (
-                <a onClick={() => setTheme("dark")}>
-                  <RiMoonClearFill size={20} />
-                </a>
-              )}
-            </li>
-          </ul>
-        </div>
+              </div>
+            </div>
+          </div>
+        </header>
       </div>
-    </header>
+
+      <div className="drawer-side">
+        <label
+          htmlFor="my-drawer-4"
+          className="drawer-overlay"
+          onClick={() => setNavbar(!navbar)}
+        ></label>
+        <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+          <li className="items-end">
+            <label
+              htmlFor="my-drawer-4"
+              className="drawer-overlay"
+              onClick={() => setNavbar(!navbar)}
+            >
+              {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
+            </label>
+          </li>
+          {renderNavItem}
+          {renderTheme()}
+        </ul>
+      </div>
+    </div>
   );
 };
 
