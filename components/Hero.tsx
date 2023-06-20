@@ -8,19 +8,20 @@ const Hero = () => {
         <div>
           <Image
             className="rounded-full"
-            src="/images/myphoto.jpeg"
+            src="/images/profilephoto.jpeg"
             alt="profile"
-            width={300}
-            height={300}
+            width={280}
+            height={280}
           />
         </div>
         <div>
-          <h1>Hi, I&#39;m Akmal!</h1>
-          <p>
-            I&#39;m a Software Developer based in Malaysia. My forte is probably
-            on the Front-end but I am working my way in becoming a Full stack
-            Developer. I am passionate about delivering cutting-edge solutions
-            and shaping the future of software development.
+          <h1 className="font-bold text-4xl mt-6">Hi, I&#39;m Akmal! 👋🏽</h1>
+          <p className="font-medium text-lg mt-4">
+            I&#39;m a <span className="text-teal-600">Software Developer</span>{" "}
+            based in Malaysia. My forte is probably on the Front-end but I am
+            working my way in becoming a Full stack Developer. I am passionate
+            about delivering cutting-edge solutions and shaping the future of
+            software development.
           </p>
         </div>
       </div>

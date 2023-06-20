@@ -68,7 +68,7 @@ const Navbar = () => {
         <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-cyan-600/10">
           <div className="navbar bg-base-100 ">
             <div className="flex-1">
-              <a className="btn btn-ghost normal-case text-2xl font-bold my-1">
+              <a className="btn btn-ghost normal-case text-2xl font-semibold my-1">
                 Akmal Kamarudin
               </a>
             </div>
