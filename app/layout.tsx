@@ -1,16 +1,17 @@
-"use client";
 import "../style/globals.css";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import Themes from "../style/theme-provider";
+import { Rubik } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({
+  subsets: ["latin"],
+  // display: "swap",
+  variable: "--font-rubik",
+});
 
-// export const metadata = {
-//   title: "Akmal",
-//   description: "My portfolio",
-// };
+export const metadata = {
+  title: "Akmal's",
+  description: "My portfolio",
+};
 
 export default function RootLayout({
   children,
@@ -18,17 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${rubik.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider enableSystem={true} attribute="data-theme">
-          <Navbar />
-          <Hero />
-
-          {children}
-        </ThemeProvider>
+      <body>
+        <Themes>{children}</Themes>
       </body>
     </html>
   );

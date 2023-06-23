@@ -85,7 +85,7 @@ const Navbar = () => {
 
             <div className={"hidden md:block"}>
               <div className="flex-none">
-                <ul className="menu menu-horizontal px-1 text-base font-bold">
+                <ul className="menu menu-horizontal px-1 text-base font-medium">
                   {renderNavItem}
                   {renderTheme()}
                 </ul>
@@ -101,7 +101,7 @@ const Navbar = () => {
           className="drawer-overlay"
           onClick={() => setNavbar(!navbar)}
         ></label>
-        <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content text-base font-bold">
+        <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content text-base font-medium">
           <li className="items-end">
             <label
               htmlFor="my-drawer-4"
