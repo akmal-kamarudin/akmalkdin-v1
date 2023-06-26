@@ -15,20 +15,12 @@ const NavItem: Array<NavItemType> = [
     page: "home",
   },
   {
-    label: "About Me",
-    page: "about me",
-  },
-  {
     label: "Projects",
     page: "projects",
   },
   {
     label: "Blogs",
     page: "blogs",
-  },
-  {
-    label: "Contact",
-    page: "contact",
   },
 ];
 

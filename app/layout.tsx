@@ -4,12 +4,12 @@ import { Rubik } from "next/font/google";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  // display: "swap",
+  display: "swap",
   variable: "--font-rubik",
 });
 
 export const metadata = {
-  title: "Akmal's",
+  title: "Akmal Kamarudin | Software Developer",
   description: "My portfolio",
 };
 
@@ -20,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${rubik.variable}`}>
-      <head>
-        <link rel="icon" href="../public/favicon.ico" />
-      </head>
+      <head>{/* <link rel="icon" href="../public/favicon.ico" /> */}</head>
       <body>
         <Themes>{children}</Themes>
       </body>
