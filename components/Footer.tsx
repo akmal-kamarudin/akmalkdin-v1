@@ -2,9 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center inset-x-0 bottom-0">
-      <p className="font-light text-md px-8 py-4 lg:text-lg">
-        Made and designed by Akmal Kamarudin 😎 &bull; &copy; 2023
+    <div className="flex flex-col items-center text-center justify-center inset-x-0 bottom-0 mt-auto">
+      <div className="grow h-32"></div>
+      <p className="font-light text-base px-8 py-4 lg:text-lg ">
+        &copy;{new Date().getFullYear()} &bull; Developed by Akmal Kamarudin
       </p>
     </div>
   );

@@ -1,4 +1,6 @@
 import "../style/globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Themes from "../style/theme-provider";
 import { Rubik } from "next/font/google";
 
@@ -22,7 +24,11 @@ export default function RootLayout({
     <html lang="en" className={`${rubik.variable}`}>
       <head>{/* <link rel="icon" href="../public/favicon.ico" /> */}</head>
       <body>
-        <Themes>{children}</Themes>
+        <Themes>
+          <Navbar />
+          {children}
+          <Footer />
+        </Themes>
       </body>
     </html>
   );

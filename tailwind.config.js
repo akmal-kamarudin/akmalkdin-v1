@@ -12,6 +12,38 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        wave: {
+          "0%": { transform: "rotate(0.0deg)" },
+          "10%": { transform: "rotate(16deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(16deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10.0deg)" },
+          "60%": { transform: "rotate(0.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
+        },
+        flip: {
+          "0%": { transform: "scaleX(-1)" },
+          "25%": { transform: "scaleX(0)" },
+          "50%": { transform: "scaleX(-1)" },
+          "75%": { transform: "scaleX(0)" },
+          "100%": { transform: "scaleX(-1)" },
+        },
+        twirl: {
+          "0%": { transform: "rotate(0.0deg)" },
+          "25%": { transform: "rotate(180.0deg)" },
+          "50%": { transform: "rotate(360.0deg)" },
+          "75%": { transform: "rotate(180.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
+        },
+      },
+      // prettier-ignore
+      animation: {
+        wiggle: "wave 2s linear infinite",
+        flip: "flip 1s linear infinite",
+        twirl: "twirl 2s linear infinite"
+      },
     },
     fontFamily: {
       sans: ["var(--font-rubik)"],
