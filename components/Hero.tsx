@@ -5,8 +5,8 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="home">
-      <div className="flex flex-col items-center text-center justify-center pt-16 px-8 lg:flex-row lg:px-16 xl:px-32">
-        <div className="flex justify-end lg:w-1/6 2xl:justify-start">
+      <div className="flex flex-col items-center text-center justify-center pt-8 lg:flex-row">
+        <div className="flex justify-end lg:w-1/5 lg:justify-start">
           <Image
             className="rounded-full shadow-xl dark:shadow-cyan-600/20"
             src="/images/profilephoto.jpeg"
@@ -15,7 +15,7 @@ const Hero = () => {
             height={220}
           />
         </div>
-        <div className="text-justify lg:pl-8 lg:w-5/6 2xl:pl-4">
+        <div className="text-justify lg:pl-4 lg:w-4/5 2xl:pl-2">
           <h1 className="font-semibold text-4xl text-center mt-8 md:text-start lg:text-5xl">
             Hi, I&#39;m Akmal!
             <span className="inline-flex animate-wiggle">👋🏽</span>

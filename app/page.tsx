@@ -1,15 +1,15 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 export default function Page() {
   return (
-    <main>
+    <main className="flex flex-col items-center text-center justify-center px-8 lg:px-32 2xl:px-64">
       <Hero />
       <Skills />
+      <Experience />
     </main>
   );
 }
