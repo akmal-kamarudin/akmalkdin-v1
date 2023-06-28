@@ -49,7 +49,7 @@ const Skills = () => {
   });
 
   return (
-    <div className="flex flex-col items-start text-center justify-start pt-16">
+    <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
       <div className="text-justify">
         <h1 className="font-semibold text-2xl text-start md:text-3xl">
           Skills

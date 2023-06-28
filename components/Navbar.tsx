@@ -1,9 +1,13 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
 import { IoMdMenu, IoMdClose, IoMdOpen } from "react-icons/io";
+import spaceRocket from "../public/icons/space-rocket-svgrepo-com.svg";
+import spaceShuttle from "../public/icons/space-shuttle-launch-svgrepo-com.svg";
+import astronautHelm from "../public/icons/astronaut-helmet-svgrepo-com.svg";
 
 interface NavItemType {
   label: string;
@@ -72,14 +76,20 @@ const Navbar = () => {
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
-        <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-cyan-600/10">
+        <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-sky-700/20">
           <div className="navbar bg-base-100 ">
             <div className="flex-1">
               <Link
-                className="btn btn-ghost normal-case text-2xl font-semibold my-1"
+                className="btn btn-ghost normal-case text-2xl font-semibold my-1 "
                 href="/"
               >
-                Akmal Kamarudin
+                <Image
+                  src={spaceRocket}
+                  alt="space-rocket"
+                  width={52}
+                  height={52}
+                  className="rotate-90"
+                />
               </Link>
             </div>
 

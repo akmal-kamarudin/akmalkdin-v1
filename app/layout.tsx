@@ -22,8 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${rubik.variable}`}>
-      <head>{/* <link rel="icon" href="../public/favicon.ico" /> */}</head>
-      <body>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body className="flex flex-col min-h-screen">
         <Themes>
           <Navbar />
           {children}
