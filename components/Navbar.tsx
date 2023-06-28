@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
@@ -7,20 +8,29 @@ import { IoMdMenu, IoMdClose, IoMdOpen } from "react-icons/io";
 interface NavItemType {
   label: string;
   page: string;
+  link: string;
 }
 
 const NavItem: Array<NavItemType> = [
   {
     label: "Home",
     page: "home",
+    link: "/",
   },
   {
     label: "Projects",
     page: "projects",
+    link: "/projects",
   },
   {
     label: "Blogs",
     page: "blogs",
+    link: "/blogs",
+  },
+  {
+    label: "Resume",
+    page: "resume",
+    link: "https://drive.google.com/file/d/1NgFZx2s5xn7rRhwBoXNZDkY029MT0Uvr/view?usp=sharing",
   },
 ];
 
@@ -32,7 +42,12 @@ const Navbar = () => {
   const renderNavItem = NavItem.map((item, id) => {
     return (
       <li key={id}>
-        <a>{item.label}</a>
+        <Link
+          href={item.link}
+          target={item.page === "resume" ? "_blank" : "_self"}
+        >
+          {item.label}
+        </Link>
       </li>
     );
   });
@@ -60,9 +75,12 @@ const Navbar = () => {
         <header className="w-full mx-auto shadow-lg top-0 z-50 dark:shadow-cyan-600/10">
           <div className="navbar bg-base-100 ">
             <div className="flex-1">
-              <a className="btn btn-ghost normal-case text-2xl font-semibold my-1">
+              <Link
+                className="btn btn-ghost normal-case text-2xl font-semibold my-1"
+                href="/"
+              >
                 Akmal Kamarudin
-              </a>
+              </Link>
             </div>
 
             <div className="md:hidden">
