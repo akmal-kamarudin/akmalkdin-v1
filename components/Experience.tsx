@@ -13,7 +13,7 @@ const Experience = () => {
       <div className="flex flex-col w-full items-center justify-center text-center">
         <div className="w-full py-8 md:w-3/5">
           <div
-            className="grid h-32 card bg-base-300 rounded-box place-items-center"
+            className="grid h-32 card bg-base-200 rounded-box place-items-center opacity-90"
             data-theme="light"
           >
             <h1>Junior Programmer @ Saf Pilihan</h1>
@@ -22,7 +22,7 @@ const Experience = () => {
           </div>
           <div className="divider text-zinc-300">|</div>
           <div
-            className="grid h-32 card bg-base-300 rounded-box place-items-center"
+            className="grid h-32 card bg-base-200 rounded-box place-items-center opacity-90"
             data-theme="light"
           >
             <h1>Biomedical Engineer @ Altica</h1>
@@ -31,7 +31,7 @@ const Experience = () => {
           </div>
           <div className="divider text-zinc-300">|</div>
           <div
-            className="grid h-32 card bg-base-300 rounded-box place-items-center"
+            className="grid h-32 card bg-base-200 rounded-box place-items-center opacity-90"
             data-theme="light"
           >
             <h1>Intern Junior Biomedical Engineer @ Advance Pact</h1>

@@ -1,56 +1,66 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import pic from "../public/images/profilephoto.jpeg";
-import foodPic1 from "../public/images/food-app1.png";
-import foodPic2 from "../public/images/food-app2.png";
-import foodPic3 from "../public/images/food-app3.png";
+import { FaGithub, FaLink } from "react-icons/fa";
+import { ProjectObj } from "@/lib/projectList";
 
-const Cards = () => {
+type CardsProps = {
+  project: ProjectObj;
+};
+
+const Cards: React.FC<CardsProps> = ({ project }) => {
+  const { title, slide1, slide2, slide3, nav, desc, url, repo } = project;
+
   return (
     <>
       <div className="card w-4/5 bg-base-100 shadow-xl my-8 dark:shadow-sky-900/30">
         <figure>
           <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full">
-              <Image src={foodPic1} alt="me" className="w-full" />
+            <div id={`${nav}1`} className="carousel-item relative w-full">
+              <Image src={slide1} alt="me" className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" className="btn btn-circle">
+                <a href={`#${nav}3`} className="btn btn-circle">
                   &#10094;
                 </a>
-                <a href="#slide2" className="btn btn-circle">
+                <a href={`#${nav}2`} className="btn btn-circle">
                   &#10095;
                 </a>
               </div>
             </div>
-            <div id="slide2" className="carousel-item relative w-full">
-              <Image src={foodPic2} alt="me" className="w-full" />
+            <div id={`${nav}2`} className="carousel-item relative w-full">
+              <Image src={slide2} alt="me" className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" className="btn btn-circle">
+                <a href={`#${nav}1`} className="btn btn-circle">
                   &#10094;
                 </a>
-                <a href="#slide3" className="btn btn-circle">
+                <a href={`#${nav}3`} className="btn btn-circle">
                   &#10095;
                 </a>
               </div>
             </div>
-            <div id="slide3" className="carousel-item relative w-full">
-              <Image src={foodPic3} alt="me" className="w-full" />
+            <div id={`${nav}3`} className="carousel-item relative w-full">
+              <Image src={slide3} alt="me" className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" className="btn btn-circle">
+                <a href={`#${nav}2`} className="btn btn-circle">
                   &#10094;
                 </a>
-                <a href="#slide1" className="btn btn-circle">
+                <a href={`#${nav}1`} className="btn btn-circle">
                   &#10095;
                 </a>
               </div>
             </div>
           </div>
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+        <div className="card-body items-center">
+          <h2 className="card-title">{title}</h2>
+          <p>{desc}</p>
+          <div className="card-actions">
+            <a href={repo} target="_blank" className="px-1">
+              <FaGithub className="text-2xl xl:text-3xl" />
+            </a>
+            <a href={url} target="_blank" className="px-1">
+              <FaLink className="text-2xl xl:text-3xl" />
+            </a>
           </div>
         </div>
       </div>

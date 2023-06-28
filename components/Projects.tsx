@@ -4,12 +4,10 @@ import Cards from "./Cards";
 import projectList from "@/lib/projectList";
 
 const Projects = () => {
-  console.log(projectList);
   const renderProjects = projectList.map((project, index) => {
     return (
-      <div key={index} className="flex flex-col items-center w-28">
-        <p className="font-base text-base pt-2 md:text-lg">{project.title}</p>
-        {/* <Cards content={project}/> */}
+      <div key={index} className="flex flex-col items-center w-full">
+        <Cards project={project} />
       </div>
     );
   });
@@ -23,11 +21,9 @@ const Projects = () => {
             I&#39;ve been fortunate to have the opportunity to work with some
             remarkable companies blablabla..
           </p>
-          <div>{renderProjects}</div>
+          <div className="">{renderProjects}</div>
         </div>
       </div>
-      <Cards />
-      <Cards />
     </>
   );
 };
