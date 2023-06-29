@@ -1,5 +1,5 @@
 import React from "react";
-import tools from "../lib/tools";
+import tools from "../lib/Tools";
 
 const Skills = () => {
   const renderTools = tools.map((tool, index) => {

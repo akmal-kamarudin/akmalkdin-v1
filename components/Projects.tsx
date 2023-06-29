@@ -1,13 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Cards from "./Cards";
-import projectList from "@/lib/projectList";
+import projects from "@/lib/ProjectList";
 
 const Projects = () => {
-  const renderProjects = projectList.map((project, index) => {
+  const renderProjects = projects.map((items, index) => {
     return (
       <div key={index} className="flex flex-col items-center w-full">
-        <Cards project={project} />
+        <Cards projects={items} />
       </div>
     );
   });

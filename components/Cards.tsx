@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { FaGithub, FaLink } from "react-icons/fa";
-import { ProjectObj } from "@/lib/projectList";
+import { ProjectObj } from "@/lib/ProjectList";
 
 type CardsProps = {
-  project: ProjectObj;
+  projects: ProjectObj;
 };
 
-const Cards: React.FC<CardsProps> = ({ project }) => {
-  const { title, slide1, slide2, slide3, nav, desc, url, repo } = project;
+const Cards: React.FC<CardsProps> = ({ projects }) => {
+  const { title, slide1, slide2, slide3, nav, desc, url, repo } = projects;
 
   return (
     <>

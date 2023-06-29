@@ -21,7 +21,7 @@ export type Tool = {
   icon: React.ReactNode;
 };
 
-const tools: Tool[] = [
+const Tools: Tool[] = [
   {
     title: "React",
     icon: <SiReact />,
@@ -80,4 +80,4 @@ const tools: Tool[] = [
   },
 ];
 
-export default tools;
+export default Tools;
