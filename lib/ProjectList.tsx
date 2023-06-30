@@ -17,7 +17,7 @@ export type ProjectObj = {
   repo: string;
 };
 
-const projectList: ProjectObj[] = [
+const ProjectList: ProjectObj[] = [
   {
     title: "Shine Dine Food App",
     slide1: foodPic1,
@@ -40,4 +40,4 @@ const projectList: ProjectObj[] = [
   },
 ];
 
-export default projectList;
+export default ProjectList;
