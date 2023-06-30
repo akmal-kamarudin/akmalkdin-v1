@@ -4,34 +4,42 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="home">
-      <div className="flex flex-col items-center text-center justify-center pt-8 lg:flex-row w-full">
-        <div className="flex justify-end lg:w-2/12 lg:justify-start">
-          <Image
-            className="rounded-full shadow-xl dark:shadow-sky-700/30"
-            src="/images/profilephoto.jpeg"
-            alt="profile"
-            width={150}
-            height={150}
-          />
-        </div>
-        <div className="text-justify lg:pl-4 lg:w-10/12 2xl:pl-2">
-          <h1 className="font-semibold text-4xl text-center mt-8 md:text-start lg:text-5xl">
-            Hi, I&#39;m Akmal!
-            <span className="inline-flex animate-wiggle">👋🏽</span>
-          </h1>
+    <div className="flex flex-col items-start text-center justify-start pt-8 w-full">
+      <div className="flex">
+        <Image
+          className="rounded-full shadow-xl dark:shadow-sky-700/30"
+          src="/images/profilephoto.jpeg"
+          alt="profile"
+          width={130}
+          height={130}
+        />
+      </div>
+      <div className="text-justify">
+        <h1 className="font-semibold text-3xl mt-8 lg:text-4xl">
+          Hi, I&#39;m Akmal!
+          <span className="inline-flex animate-wiggle">👋🏽</span>
+        </h1>
+        <h3 className="text-left font-semibold text-2xl mt-4 lg:text-3xl">
+          Frontend Developer and Tech Enthusiast{" "}
+          <span className="inline-flex animate-bounce">💻</span>
+        </h3>
+        <div className="mt-8">
           <p className="font-normal text-lg mt-4 md:text-xl">
-            I&#39;m a <span className="text-sky-500">Software Developer </span>
+            I&#39;m a{" "}
+            <span className="font-medium text-sky-500">
+              Software Developer{" "}
+            </span>
             based in Malaysia. My forte is on the Front-end but I am working my
             way in becoming a Full stack Developer.
-            <br />
-            <br />I am excited to apply my comprehensive skill set and drive to
+          </p>
+          <p className="font-normal text-lg mt-4 md:text-xl">
+            I am excited to apply my comprehensive skill set and drive to
             contribute to the dynamic and innovative field of software
             engineering.
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

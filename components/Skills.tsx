@@ -49,7 +49,7 @@ const Skills = () => {
   });
 
   return (
-    <div className="flex flex-col items-center text-center justify-start pt-16 w-full">
+    <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
       <div className="text-justify">
         <h1 className="font-semibold text-2xl text-start md:text-3xl">
           Skills
@@ -60,8 +60,8 @@ const Skills = () => {
           the list.
         </p>
       </div>
-      <div className="flex flex-col item-center justify-center text-center xl:w-4/5">
-        <div className="flex flex-row flex-wrap place-content-center gap-8 py-8">
+      <div className="flex flex-row justify-center">
+        <div className="flex flex-row flex-wrap place-content-center md:w-4/5 gap-8 py-8">
           {renderTools}
         </div>
       </div>

@@ -19,6 +19,16 @@ export type ProjectObj = {
 
 const ProjectList: ProjectObj[] = [
   {
+    title: "Personal Website",
+    slide1: contactPic1,
+    slide2: contactPic2,
+    slide3: contactPic3,
+    nav: "porfolio",
+    desc: "A simple personal portfolio landing page built using Next.js",
+    url: "https://food-order-app-swart-omega.vercel.app/",
+    repo: "https://github.com/akmal-kamarudin/akmalkdin-v1",
+  },
+  {
     title: "Shine Dine Food App",
     slide1: foodPic1,
     slide2: foodPic2,
@@ -46,7 +56,7 @@ const ProjectList: ProjectObj[] = [
     nav: "news",
     desc: "A news search app that utilize the News API for users to search and read articles.",
     url: "https://pern-contact-app-production.up.railway.app/",
-    repo: "https://github.com/akmal-kamarudin/pern-contact-app",
+    repo: "https://github.com/akmal-kamarudin/news-search-app",
   },
 ];
 
