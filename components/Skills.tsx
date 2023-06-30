@@ -49,19 +49,21 @@ const Skills = () => {
   });
 
   return (
-    <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
+    <div className="flex flex-col items-center text-center justify-start pt-16 w-full">
       <div className="text-justify">
         <h1 className="font-semibold text-2xl text-start md:text-3xl">
           Skills
         </h1>
         <p className="font-normal text-lg mt-4 md:text-xl">
-          While I&#39;m constantly thrilled to utilize cutting-edge
-          technologies, these are my reliable and proven tools of choice for
-          constructing any project.
+          These are my current tech stack for the moment and I&#39;m always
+          thrilled to utilize any new cutting-edge technologies and add them to
+          the list.
         </p>
       </div>
-      <div className="flex flex-row flex-wrap gap-8 py-8 justify-center">
-        {renderTools}
+      <div className="flex flex-col item-center justify-center text-center xl:w-4/5">
+        <div className="flex flex-row flex-wrap place-content-center gap-8 py-8">
+          {renderTools}
+        </div>
       </div>
     </div>
   );

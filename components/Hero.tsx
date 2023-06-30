@@ -23,9 +23,11 @@ const Hero = () => {
           <p className="font-normal text-lg mt-4 md:text-xl">
             I&#39;m a <span className="text-sky-500">Software Developer </span>
             based in Malaysia. My forte is on the Front-end but I am working my
-            way in becoming a Full stack Developer. I am excited to apply my
-            comprehensive skill set and drive to contribute to the dynamic and
-            innovative field of software engineering.
+            way in becoming a Full stack Developer.
+            <br />
+            <br />I am excited to apply my comprehensive skill set and drive to
+            contribute to the dynamic and innovative field of software
+            engineering.
           </p>
         </div>
       </div>

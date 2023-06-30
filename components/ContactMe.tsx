@@ -7,8 +7,8 @@ const ContactMe = () => {
       <div className="text-justify">
         <h1 className="font-semibold text-2xl md:text-3xl">Contact Me</h1>
         <p className="font-normal text-lg mt-4 md:text-xl">
-          You can connect with me on this social media platforms or you can drop
-          an email for any enquiries.
+          You can connect with me on these social media platforms or you can
+          drop an email for any enquiries.
         </p>
       </div>
       <div className="flex flex-col py-4">
