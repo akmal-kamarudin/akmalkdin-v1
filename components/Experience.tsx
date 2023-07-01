@@ -6,8 +6,8 @@ const Experience = () => {
       <div className="text-start">
         <h1 className="font-semibold text-2xl md:text-3xl">Experiences</h1>
         <p className="font-normal text-lg mt-4 md:text-xl">
-          I&#39;ve been fortunate to have the opportunity to work with some
-          remarkable companies.
+          Throughout my career, I&#39;ve had the privilege of working with
+          remarkable companies that have provided me with valuable experiences.
         </p>
       </div>
       <div className="flex flex-col w-full items-center justify-center text-center">
