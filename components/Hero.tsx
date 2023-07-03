@@ -1,21 +1,26 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import profilePic from "@/public/images/profilephoto.jpeg";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-start text-center justify-start pt-8 w-full">
+    <div className="flex flex-col xl:flex-row xl:items-center items-start text-center justify-start pt-16 w-full">
       <div className="flex">
         <Image
           className="rounded-full shadow-xl dark:shadow-sky-700/30"
-          src="/images/profilephoto.jpeg"
+          src={profilePic}
           alt="profile"
-          width={130}
-          height={130}
+          sizes="(min-width: 1280px) 16vw, (min-width: 768px) 24vw, 32vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
         />
       </div>
-      <div className="text-justify">
-        <h1 className="font-semibold text-3xl mt-8 lg:text-4xl">
+      <div className="text-justify xl:ml-8">
+        <h1 className="font-semibold text-3xl mt-8 lg:text-4xl xl:mt-0">
           Hi, I&#39;m Akmal!
           <span className="inline-flex animate-wiggle">👋🏽</span>
         </h1>
@@ -23,20 +28,20 @@ const Hero = () => {
           Frontend Developer and Tech Enthusiast{" "}
           <span className="inline-flex animate-bounce">💻</span>
         </h3>
-        <div className="mt-8">
-          <p className="font-normal text-lg mt-4 lg:text-xl">
-            I&#39;m a{" "}
-            <span className="font-medium text-sky-500">
-              Software Developer{" "}
-            </span>
-            based in Malaysia, with a focus on front-end development. However, I
-            am also actively working towards becoming a full stack developer.
-          </p>
-          <p className="font-normal text-lg mt-4 lg:text-xl">
-            With my comprehensive skill set and drive, I am excited to
-            contribute to the dynamic and innovative field of software
-            engineering.
-          </p>
+        <div className="flex flex-row mt-8">
+          <div className="mr-2">
+            <a
+              href="https://www.linkedin.com/in/akmal-kamarudin19/"
+              target="_blank"
+            >
+              <SiLinkedin className="text-2xl xl:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+            </a>
+          </div>
+          <div className="ml-2">
+            <a href="https://github.com/akmal-kamarudin" target="_blank">
+              <SiGithub className="text-2xl xl:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

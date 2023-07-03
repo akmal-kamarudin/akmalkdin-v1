@@ -56,10 +56,10 @@ const Cards: React.FC<CardsProps> = ({ projects }) => {
           <p>{desc}</p>
           <div className="card-actions">
             <a href={repo} target="_blank" className="px-1">
-              <FaGithub className="text-2xl xl:text-3xl" />
+              <FaGithub className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
             <a href={url} target="_blank" className="px-1">
-              <FaLink className="text-2xl xl:text-3xl" />
+              <FaLink className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
         </div>
