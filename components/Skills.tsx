@@ -43,7 +43,7 @@ const Skills = () => {
         >
           {tool.icon}
         </div>
-        <p className="font-base text-base pt-2 md:text-lg">{tool.title}</p>
+        <p className="font-base text-base pt-2 lg:text-lg">{tool.title}</p>
       </div>
     );
   });
@@ -51,10 +51,10 @@ const Skills = () => {
   return (
     <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
       <div className="text-justify">
-        <h1 className="font-semibold text-2xl text-start md:text-3xl">
+        <h1 className="font-semibold text-2xl text-start lg:text-3xl">
           Skills
         </h1>
-        <p className="font-normal text-lg mt-4 md:text-xl">
+        <p className="font-normal text-lg mt-4 lg:text-xl">
           These are my current tech stack for the moment and I&#39;m always
           thrilled to utilize any new cutting-edge technologies and add them to
           the list.

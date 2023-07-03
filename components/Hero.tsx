@@ -24,7 +24,7 @@ const Hero = () => {
           <span className="inline-flex animate-bounce">💻</span>
         </h3>
         <div className="mt-8">
-          <p className="font-normal text-lg mt-4 md:text-xl">
+          <p className="font-normal text-lg mt-4 lg:text-xl">
             I&#39;m a{" "}
             <span className="font-medium text-sky-500">
               Software Developer{" "}
@@ -32,7 +32,7 @@ const Hero = () => {
             based in Malaysia, with a focus on front-end development. However, I
             am also actively working towards becoming a full stack developer.
           </p>
-          <p className="font-normal text-lg mt-4 md:text-xl">
+          <p className="font-normal text-lg mt-4 lg:text-xl">
             With my comprehensive skill set and drive, I am excited to
             contribute to the dynamic and innovative field of software
             engineering.
@@ -44,5 +44,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// font-bold text-4xl text-center mt-6 md:text-left md:text-7xl
