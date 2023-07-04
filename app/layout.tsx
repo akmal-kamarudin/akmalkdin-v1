@@ -11,7 +11,7 @@ const rubik = Rubik({
 });
 
 export const metadata = {
-  title: "Akmal Kamarudin | Software Developer",
+  title: "Akmal | Software Developer",
   description: "My portfolio",
 };
 

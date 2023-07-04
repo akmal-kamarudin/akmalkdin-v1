@@ -52,8 +52,10 @@ const Cards: React.FC<CardsProps> = ({ projects }) => {
           </div>
         </figure>
         <div className="card-body items-center">
-          <h2 className="card-title">{title}</h2>
-          <p>{desc}</p>
+          <h2 className="card-title font-semibold text-lg lg:text-xl">
+            {title}
+          </h2>
+          <p className="font-normal text-base my-4 lg:text-lg">{desc}</p>
           <div className="card-actions">
             <a href={repo} target="_blank" className="px-1">
               <FaGithub className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
