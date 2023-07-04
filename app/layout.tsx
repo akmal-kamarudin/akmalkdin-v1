@@ -2,13 +2,7 @@ import "../style/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Themes from "../style/theme-provider";
-import { Rubik } from "next/font/google";
-
-const rubik = Rubik({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-rubik",
-});
+import { rubik } from "@/style/font";
 
 export const metadata = {
   title: "Akmal | Software Developer",

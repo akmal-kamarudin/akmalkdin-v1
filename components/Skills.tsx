@@ -1,12 +1,14 @@
 import React from "react";
 import tools from "../lib/Tools";
+import MotionItems from "./MotionItems";
 
 const Skills = () => {
   const renderTools = tools.map((tool, index) => {
     return (
-      <div key={index} className="flex flex-col items-center w-28">
-        <div
-          className={`flex items-center justify-center text-4xl text-zinc-500 transition-all ease-in-out duration-200 hover:scale-125
+      <MotionItems key={index} itemKey={index}>
+        <div className="flex flex-col items-center w-28">
+          <div
+            className={`flex items-center justify-center text-4xl text-zinc-500 transition-all ease-in-out duration-200 hover:scale-125
           ${tool.title === "React" && "hover:text-[#61dbfb] hover:rotate-180"}
           ${
             tool.title === "TypeScript" &&
@@ -40,11 +42,12 @@ const Skills = () => {
           ${tool.title === "Figma" && "hover:text-[#f24e1e]"}
           ${tool.title === "Linux" && "hover:text-black hover:animate-wiggle"}
           `}
-        >
-          {tool.icon}
+          >
+            {tool.icon}
+          </div>
+          <p className="font-base text-base pt-2 lg:text-lg">{tool.title}</p>
         </div>
-        <p className="font-base text-base pt-2 lg:text-lg">{tool.title}</p>
-      </div>
+      </MotionItems>
     );
   });
 
