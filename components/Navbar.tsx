@@ -32,7 +32,8 @@ const NavItem: Array<NavItemType> = [
   {
     label: "Resume",
     page: "resume",
-    link: "https://drive.google.com/file/d/1NgFZx2s5xn7rRhwBoXNZDkY029MT0Uvr/view?usp=sharing",
+    link: "/resume",
+    // link: "https://drive.google.com/file/d/1NgFZx2s5xn7rRhwBoXNZDkY029MT0Uvr/view?usp=sharing",
   },
 ];
 
@@ -46,7 +47,8 @@ const Navbar = () => {
       <li key={id}>
         <Link
           href={item.link}
-          target={item.page === "resume" ? "_blank" : "_self"}
+          target={"_self"}
+          // target={item.page === "resume" ? "_blank" : "_self"}
         >
           {item.label}
         </Link>
