@@ -49,15 +49,13 @@ const Skills = () => {
   });
 
   return (
-    <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
-      <div className="text-justify">
-        <h1 className="font-semibold text-xl text-start lg:text-2xl">Skills</h1>
-        <p className="font-normal text-lg mt-4 lg:text-xl">
-          These are my current tech stack for the moment and I&#39;m always
-          thrilled to utilize any new cutting-edge technologies and add them to
-          the list.
-        </p>
-      </div>
+    <div className="flex flex-col items-start text-justify justify-start pt-16 w-full">
+      <h1 className="font-semibold text-xl lg:text-2xl">Skills</h1>
+      <p className="font-normal text-lg mt-4 lg:text-xl">
+        These are my current tech stack for the moment and I&#39;m always
+        thrilled to utilize any new cutting-edge technologies and add them to
+        the list.
+      </p>
       <div className="flex flex-row justify-center">
         <div className="flex flex-row flex-wrap place-content-center md:w-4/5 gap-8 py-8">
           {renderTools}

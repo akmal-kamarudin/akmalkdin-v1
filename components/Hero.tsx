@@ -7,24 +7,24 @@ import { SiLinkedin, SiGithub } from "react-icons/si";
 const Hero = () => {
   return (
     <div className="flex flex-col xl:flex-row xl:items-center items-start text-center justify-start pt-16 w-full">
-      <div className="flex">
+      <div className="flex flex-row">
         <Image
           className="rounded-full shadow-xl dark:shadow-sky-700/30"
           src={profilePic}
           alt="profile"
-          sizes="(min-width: 1280px) 16vw, (min-width: 768px) 24vw, 32vw"
+          sizes="(min-width: 1200px) 16vw, (min-width: 1000px) 20vw, (min-width: 760px) 24vw, 32vw"
           style={{
             width: "100%",
             height: "auto",
           }}
         />
       </div>
-      <div className="text-justify xl:ml-8">
+      <div className="text-justify xl:ml-8 w-full">
         <h1 className="font-semibold text-3xl mt-8 lg:text-4xl xl:mt-0">
           Hi, I&#39;m Akmal!
           <span className="inline-flex animate-wiggle">👋🏽</span>
         </h1>
-        <h3 className="text-left font-semibold text-2xl mt-4 lg:text-3xl">
+        <h3 className="font-semibold text-2xl mt-4 lg:text-3xl">
           Frontend Developer and Tech Enthusiast{" "}
           <span className="inline-flex animate-bounce">💻</span>
         </h3>

@@ -31,7 +31,7 @@ const ProjectList: ProjectObj[] = [
     slide3: portflioPic3,
     nav: "porfolio",
     desc: "A personal portfolio landing page built using Next.js",
-    url: "#",
+    url: "/",
     repo: "https://github.com/akmal-kamarudin/akmalkdin-v1",
   },
   {

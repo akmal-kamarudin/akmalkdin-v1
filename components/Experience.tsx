@@ -2,14 +2,12 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-start text-center justify-start pt-16 w-full">
-      <div className="text-start">
-        <h1 className="font-semibold text-xl lg:text-2xl">Experiences</h1>
-        <p className="font-normal text-lg mt-4 lg:text-xl">
-          Throughout my career, I&#39;ve had the privilege of working with
-          remarkable companies that have provided me with valuable experiences.
-        </p>
-      </div>
+    <div className="flex flex-col items-start text-justify justify-start pt-16 w-full">
+      <h1 className="font-semibold text-xl lg:text-2xl">Experiences</h1>
+      <p className="font-normal text-lg mt-4 lg:text-xl">
+        Throughout my career, I&#39;ve had the privilege of working with
+        remarkable companies that have provided me with valuable experiences.
+      </p>
       <div className="flex flex-col w-full items-center justify-center text-center">
         <div className="w-full py-8 md:w-3/5">
           <div

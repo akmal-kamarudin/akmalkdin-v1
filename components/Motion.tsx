@@ -8,7 +8,7 @@ type MotionProps = {
 const Motion = ({ children }: MotionProps): JSX.Element => {
   const ref = useRef(null);
   const animate = useAnimation();
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
   const variants = {
     hidden: {
       y: -30,
@@ -21,7 +21,7 @@ const Motion = ({ children }: MotionProps): JSX.Element => {
   };
   const transition = {
     ease: "easeOut",
-    delay: 0.2,
+    delay: 0.4,
     duration: 0.4,
     damping: 5,
     mass: 1,
