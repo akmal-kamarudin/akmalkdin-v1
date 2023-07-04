@@ -31,9 +31,8 @@ const MotionItems = ({ children, itemKey }: MotionProps): JSX.Element => {
   useEffect(() => {
     if (isInView) {
       animate.start("show");
-      console.log(itemKey);
     }
-  }, [animate, isInView, itemKey]);
+  }, [animate, isInView]);
 
   return (
     <motion.div

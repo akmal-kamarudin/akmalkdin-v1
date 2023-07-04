@@ -1,13 +1,16 @@
 import React from "react";
 import Cards from "./Cards";
 import projects from "@/lib/ProjectList";
+import MotionItems from "./MotionItems";
 
 const Projects = () => {
   const renderProjects = projects.map((items, index) => {
     return (
-      <div key={index} className="flex flex-col items-center w-full">
-        <Cards projects={items} />
-      </div>
+      <MotionItems key={index} itemKey={index}>
+        <div className="flex flex-col items-center w-full">
+          <Cards projects={items} />
+        </div>
+      </MotionItems>
     );
   });
 
