@@ -25,7 +25,7 @@ const Hero = () => {
           <span className="inline-flex animate-wiggle">👋🏽</span>
         </h1>
         <h3 className="font-semibold text-2xl mt-4 lg:text-3xl">
-          Frontend Developer and Tech Enthusiast{" "}
+          Front-End Web Developer and Tech Enthusiast{" "}
           <span className="inline-flex animate-bounce">💻</span>
         </h3>
         <div className="flex flex-row mt-8">
