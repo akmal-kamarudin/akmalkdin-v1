@@ -6,8 +6,6 @@ import { useTheme } from "next-themes";
 import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
 import { IoMdMenu, IoMdClose, IoMdOpen } from "react-icons/io";
 import spaceRocket from "../public/icons/space-rocket-svgrepo-com.svg";
-import spaceShuttle from "../public/icons/space-shuttle-launch-svgrepo-com.svg";
-import astronautHelm from "../public/icons/astronaut-helmet-svgrepo-com.svg";
 
 interface NavItemType {
   label: string;
@@ -89,6 +87,7 @@ const Navbar = () => {
                   width={52}
                   height={52}
                   className="rotate-90"
+                  priority={true}
                 />
               </Link>
             </div>
