@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import profilePic from "@/public/images/profilephoto.jpeg";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiUpwork } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
           <span className="inline-flex animate-bounce">💻</span>
         </h3>
         <div className="flex flex-row mt-8">
-          <div className="mr-2">
+          <div className="mr-1.5">
             <a
               href="https://www.linkedin.com/in/akmal-kamarudin19/"
               target="_blank"
@@ -37,9 +37,17 @@ const Hero = () => {
               <SiLinkedin className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
-          <div className="ml-2">
+          <div className="mx-1.5">
             <a href="https://github.com/akmal-kamarudin" target="_blank">
               <SiGithub className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+            </a>
+          </div>
+          <div className="ml-1.5">
+            <a
+              href="https://www.upwork.com/freelancers/~0161970c8704f2b190"
+              target="_blank"
+            >
+              <SiUpwork className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
         </div>

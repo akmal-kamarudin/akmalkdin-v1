@@ -1,4 +1,4 @@
-import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiUpwork, SiGmail } from "react-icons/si";
 import MotionItems from "./MotionItems";
 
 const ContactMe = () => {
@@ -41,6 +41,21 @@ const ContactMe = () => {
         </MotionItems>
 
         <MotionItems itemKey={2}>
+          <div className="flex flex-row m-2">
+            <a
+              href="https://www.upwork.com/freelancers/~0161970c8704f2b190"
+              target="_blank"
+              className="flex flex-row items-center"
+            >
+              <SiUpwork className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+              <p className="font-medium text-base lg:text-lg ml-3">
+                akmal kamarudin
+              </p>
+            </a>
+          </div>
+        </MotionItems>
+
+        <MotionItems itemKey={3}>
           <div className="flex flex-row m-2">
             <a
               href="mailto:akmal.kamarudin19@gmail.com"

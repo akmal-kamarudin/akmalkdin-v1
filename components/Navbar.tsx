@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useTheme } from "next-themes";
 import { RiSunLine, RiMoonClearFill } from "react-icons/ri";
 import { IoMdMenu, IoMdClose, IoMdOpen } from "react-icons/io";
-import spaceRocket from "../public/icons/space-rocket-svgrepo-com.svg";
+import astroHelmet from "../public/icons/astronaut-helmet-svgrepo-com.svg";
 
 interface NavItemType {
   label: string;
@@ -33,7 +33,6 @@ const NavItem: Array<NavItemType> = [
     label: "Resume",
     page: "resume",
     link: "/resume",
-    // link: "https://drive.google.com/file/d/1NgFZx2s5xn7rRhwBoXNZDkY029MT0Uvr/view?usp=sharing",
   },
 ];
 
@@ -45,11 +44,7 @@ const Navbar = () => {
   const renderNavItem = NavItem.map((item, id) => {
     return (
       <li key={id}>
-        <Link
-          href={item.link}
-          target={"_self"}
-          // target={item.page === "resume" ? "_blank" : "_self"}
-        >
+        <Link href={item.link} target={"_self"}>
           {item.label}
         </Link>
       </li>
@@ -84,11 +79,10 @@ const Navbar = () => {
                 href="/"
               >
                 <Image
-                  src={spaceRocket}
-                  alt="space-rocket"
-                  width={52}
-                  height={52}
-                  className="rotate-90"
+                  src={astroHelmet}
+                  alt="astro-helmet"
+                  width={50}
+                  height={50}
                   priority={true}
                 />
               </Link>
