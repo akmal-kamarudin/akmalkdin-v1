@@ -50,7 +50,7 @@ const ProjectList: ProjectObj[] = [
     slide2: contactPic2,
     slide3: contactPic3,
     nav: "contact",
-    desc: "A fullstack contact management system using the PERN(PostgreSQL, Express, React, Node.js) stack.",
+    desc: "A fullstack contact management system with CRUD functions utilizing the PERN (PostgreSQL, Express.js, React, Node.js) stack.",
     url: "https://pern-contact-app-production.up.railway.app",
     repo: "https://github.com/akmal-kamarudin/pern-contact-app",
   },
