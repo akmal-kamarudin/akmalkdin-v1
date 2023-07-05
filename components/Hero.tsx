@@ -34,12 +34,12 @@ const Hero = () => {
               href="https://www.linkedin.com/in/akmal-kamarudin19/"
               target="_blank"
             >
-              <SiLinkedin className="text-2xl xl:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+              <SiLinkedin className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
           <div className="ml-2">
             <a href="https://github.com/akmal-kamarudin" target="_blank">
-              <SiGithub className="text-2xl xl:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
+              <SiGithub className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
         </div>

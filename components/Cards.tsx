@@ -60,7 +60,11 @@ const Cards: React.FC<CardsProps> = ({ projects }) => {
             <a href={repo} target="_blank" className="px-1">
               <FaGithub className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
-            <a href={url} target="_blank" className="px-1">
+            <a
+              href={url}
+              target={nav === "porfolio" ? "_self" : "_blank"}
+              className="px-1"
+            >
               <FaLink className="text-2xl lg:text-3xl transition-all ease-in-out duration-100 hover:scale-125 hover:rotate-12" />
             </a>
           </div>
