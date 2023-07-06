@@ -14,17 +14,20 @@ const BlogPost: React.FC<BlogsProps> = ({ posts }) => {
 
   return (
     <>
-      <div className="card card-compact w-4/5 bg-base-100 shadow-xl my-8 dark:shadow-sky-700/30">
+      <div className="card card-compact w-80 bg-base-100 shadow-xl my-8 dark:shadow-sky-700/30">
         <figure>
           <Image src={examplePic} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
-          <p>{date}</p>
-          <p>{desc}</p>
+          <h2 className="card-title font-semibold text-lg lg:text-xl">
+            {title}
+          </h2>
+          <p className="font-normal text-sm my-2 lg:text-base">🗓️{date}</p>
+          <p className="font-normal text-base my-2 lg:text-lg">{desc}</p>
           <div className="card-actions justify-end">
-            <a href={url} target="_blank"></a>
-            <button className="btn btn-primary btn-sm">Read More</button>
+            <a href={url} target="_blank">
+              <button className="btn btn-primary btn-sm">Read More</button>
+            </a>
           </div>
         </div>
       </div>
