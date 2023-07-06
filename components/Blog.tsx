@@ -1,14 +1,14 @@
 import React from "react";
-import Cards from "./Cards";
-import projects from "@/lib/ProjectList";
+import BlogPost from "./BlogPost";
+import blogs from "@/lib/BlogList";
 import MotionItems from "./MotionItems";
 
 const Blog = () => {
-  const renderBlogPost = projects.map((items, index) => {
+  const renderBlogPost = blogs.map((items, index) => {
     return (
       <MotionItems key={index} itemKey={index}>
         <div className="flex flex-col items-center w-full">
-          <Cards projects={items} />
+          <BlogPost posts={items} />
         </div>
       </MotionItems>
     );
