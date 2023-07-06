@@ -21,8 +21,10 @@ const Blog = () => {
         <p className="font-normal text-lg my-4 lg:text-xl">
           Have a look on my latest entries.
         </p>
-        <div className="flex flex-row flex-wrap place-content-center gap-x-16">
-          {renderBlogPost}
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-row flex-wrap place-content-center sm:place-content-stretch gap-x-8">
+            {renderBlogPost}
+          </div>
         </div>
       </div>
     </>

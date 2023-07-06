@@ -10,9 +10,9 @@ export default function Page() {
       <Motion>
         <InProgress />
       </Motion>
-      <Motion>
+      {/* <Motion>
         <Blog />
-      </Motion>
+      </Motion> */}
     </main>
   );
 }
