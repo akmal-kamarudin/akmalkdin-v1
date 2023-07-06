@@ -4,7 +4,7 @@ import projects from "@/lib/ProjectList";
 import MotionItems from "./MotionItems";
 
 const Blog = () => {
-  const renderProjects = projects.map((items, index) => {
+  const renderBlogPost = projects.map((items, index) => {
     return (
       <MotionItems key={index} itemKey={index}>
         <div className="flex flex-col items-center w-full">
@@ -21,7 +21,7 @@ const Blog = () => {
         <p className="font-normal text-lg my-4 lg:text-xl">
           Have a look on my latest entries.
         </p>
-        <div>{renderProjects}</div>
+        <div>{renderBlogPost}</div>
       </div>
     </>
   );
