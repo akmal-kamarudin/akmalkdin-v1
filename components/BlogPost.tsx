@@ -3,28 +3,31 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { BlogObj } from "@/lib/BlogList";
+import examplePic from "@/public/images/food-app1.png";
 
-// type CardsProps = {
-//   projects: ProjectObj;
-// };
+type BlogsProps = {
+  posts: BlogObj;
+};
 
-const BlogPost = () => {
-  // const { title, slide1, slide2, slide3, nav, desc, url, repo } = projects;
+const BlogPost: React.FC<BlogsProps> = ({ posts }) => {
+  const { title, date, pic, desc, url } = posts;
 
   return (
     <>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+      <div className="card card-compact w-80 bg-base-100 shadow-xl my-8 dark:shadow-sky-700/30">
         <figure>
-          <Image
-            src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
+          <Image src={examplePic} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <h2 className="card-title font-semibold text-lg lg:text-xl">
+            {title}
+          </h2>
+          <p className="font-normal text-sm my-2 lg:text-base">🗓️{date}</p>
+          <p className="font-normal text-base my-2 lg:text-lg">{desc}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <a href={url} target="_blank">
+              <button className="btn btn-primary btn-sm">Read More</button>
+            </a>
           </div>
         </div>
       </div>

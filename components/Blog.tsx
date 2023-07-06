@@ -1,14 +1,14 @@
 import React from "react";
-import Cards from "./Cards";
-import projects from "@/lib/ProjectList";
+import BlogPost from "./BlogPost";
+import blogs from "@/lib/BlogList";
 import MotionItems from "./MotionItems";
 
 const Blog = () => {
-  const renderBlogPost = projects.map((items, index) => {
+  const renderBlogPost = blogs.map((items, index) => {
     return (
       <MotionItems key={index} itemKey={index}>
         <div className="flex flex-col items-center w-full">
-          <Cards projects={items} />
+          <BlogPost posts={items} />
         </div>
       </MotionItems>
     );
@@ -21,7 +21,9 @@ const Blog = () => {
         <p className="font-normal text-lg my-4 lg:text-xl">
           Have a look on my latest entries.
         </p>
-        <div>{renderBlogPost}</div>
+        <div className="flex flex-row flex-wrap place-content-center gap-x-16">
+          {renderBlogPost}
+        </div>
       </div>
     </>
   );
