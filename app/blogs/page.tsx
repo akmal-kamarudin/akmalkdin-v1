@@ -1,6 +1,7 @@
 "use client";
 
 import InProgress from "@/components/InProgress";
+import Blog from "@/components/Blog";
 import Motion from "@/components/Motion";
 
 export default function Page() {
@@ -9,6 +10,9 @@ export default function Page() {
       <Motion>
         <InProgress />
       </Motion>
+      {/* <Motion>
+        <Blog />
+      </Motion> */}
     </main>
   );
 }
