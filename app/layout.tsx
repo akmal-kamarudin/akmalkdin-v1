@@ -5,7 +5,7 @@ import Themes from "../style/theme-provider";
 import { rubik } from "@/style/font";
 
 export const metadata = {
-  title: "Akmal | Software Developer",
+  title: "Akmal | Web Developer",
   description: "My portfolio",
 };
 
