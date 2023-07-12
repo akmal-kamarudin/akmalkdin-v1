@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="font-semibold text-xl lg:text-2xl">About Me</h1>
       <p className="font-normal text-lg mt-4 lg:text-xl">
         I&#39;m a{" "}
-        <span className="font-medium text-sky-500">Software Developer </span>
+        <span className="font-medium text-sky-500">Web Developer </span>
         based in Malaysia, with a focus on frontend web development. However, I
         am also actively working towards becoming a full stack developer.
         Despite starting my career as a Biomedical Engineer in the healthcare
