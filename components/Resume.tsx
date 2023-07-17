@@ -12,7 +12,7 @@ const Resume = () => {
       </p>
       <IoMdArrowDown className="mt-8 text-2xl xl:text-3xl animate-bounce" />
       <a
-        href="https://drive.google.com/file/d/1XYtZ-rKgZA6YzZ0xlquCWVNAGdtsu5Xg/view?usp=sharing"
+        href="https://drive.google.com/file/d/18w-xlKijJeq4uglPPSNyc9iu272JYAh6/view?usp=sharing"
         target="_blank"
       >
         <button className="btn btn-primary mt-2">Download Resume</button>
