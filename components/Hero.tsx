@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="flex flex-col xl:flex-row xl:items-center items-start text-center justify-start pt-16 w-full">
       <div className="flex flex-row">
         <Image
-          className="rounded-full shadow-xl dark:shadow-sky-700/30"
+          className="rounded-full shadow-xl dark:shadow-slate-400/10"
           src={profilePic}
           alt="profile"
           sizes="(min-width: 1200px) 16vw, (min-width: 1000px) 20vw, (min-width: 760px) 24vw, 32vw"
@@ -25,7 +25,7 @@ const Hero = () => {
           <span className="inline-flex animate-wiggle">👋🏽</span>
         </h1>
         <h3 className="font-semibold text-2xl mt-4 lg:text-3xl">
-          Front-End Web Developer and Tech Enthusiast{" "}
+          Full-Stack Web Developer and Tech Enthusiast{" "}
           <span className="inline-flex animate-bounce">💻</span>
         </h3>
         <div className="flex flex-row mt-8">

@@ -8,9 +8,14 @@ export type ExpObj = {
 
 const ExpList: ExpObj[] = [
   {
-    job: "Intern Junior Biomedical Engineer @ Advance Pact",
-    location: "Johor Bahru, Malaysia",
-    period: "Jan 2018 — May 2018",
+    job: "System Developer (Java) @ Pymsoft",
+    location: "Petaling Java, Malaysia",
+    period: "Sept 2023 - Present",
+  },
+  {
+    job: "Programmer @ Saf Pilihan",
+    location: "Bandar Baru Bangi, Malaysia",
+    period: "Mar 2023 - May 2023",
   },
   {
     job: "Biomedical Engineer @ Altica",
@@ -18,9 +23,9 @@ const ExpList: ExpObj[] = [
     period: "Jul 2021 - Feb 2023",
   },
   {
-    job: "Programmer @ Saf Pilihan",
-    location: "Bandar Baru Bangi, Malaysia",
-    period: "Jan 2023 - Present",
+    job: "Intern Junior Biomedical Engineer @ Advance Pact",
+    location: "Johor Bahru, Malaysia",
+    period: "Jan 2018 — May 2018",
   },
 ];
 

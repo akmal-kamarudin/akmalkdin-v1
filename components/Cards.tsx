@@ -13,7 +13,10 @@ const Cards: React.FC<CardsProps> = ({ projects }) => {
 
   return (
     <>
-      <div className="card w-4/5 bg-base-100 shadow-xl my-8 dark:shadow-sky-700/30">
+      <div
+        className="card w-4/5 bg-base-100 shadow-xl my-8 dark:shadow-slate-300/20"
+        data-theme="emerald"
+      >
         <figure>
           <div className="carousel w-full">
             <div id={`${nav}1`} className="carousel-item relative w-full">

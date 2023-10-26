@@ -1,7 +1,9 @@
 import React from "react";
 import {
-  SiReact,
+  SiSpringboot,
   SiTypescript,
+  SiAngular,
+  SiReact,
   SiNextdotjs,
   SiNodedotjs,
   SiExpress,
@@ -23,23 +25,31 @@ export type Tool = {
 
 const Tools: Tool[] = [
   {
-    title: "React",
-    icon: <SiReact />,
+    title: "Java SpringBoot",
+    icon: <SiSpringboot />,
   },
   {
     title: "TypeScript",
     icon: <SiTypescript />,
   },
   {
-    title: "Next.js",
+    title: "AngularJS",
+    icon: <SiAngular />,
+  },
+  {
+    title: "ReactJS",
+    icon: <SiReact />,
+  },
+  {
+    title: "NextJS",
     icon: <SiNextdotjs />,
   },
   {
-    title: "Node.js",
+    title: "NodeJS",
     icon: <SiNodedotjs />,
   },
   {
-    title: "Express.js",
+    title: "ExpressJS",
     icon: <SiExpress />,
   },
   {

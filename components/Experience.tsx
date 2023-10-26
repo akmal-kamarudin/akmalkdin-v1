@@ -9,8 +9,8 @@ const Experience = () => {
     return (
       <MotionItems key={index} itemKey={index}>
         <div
-          className="grid h-32 card bg-base-200 rounded-box place-items-center opacity-90"
-          data-theme="light"
+          className="grid h-32 card bg-base-200 dark:bg-base-100 rounded-box place-items-center"
+          data-theme="emerald"
         >
           <h1>{items.job}</h1>
           <h3>{items.location}</h3>
