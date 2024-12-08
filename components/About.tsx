@@ -12,7 +12,7 @@ const About = () => {
         am also actively working towards becoming a full stack developer.
         Despite starting my career as a Biomedical Engineer in the healthcare
         industry, my passion for the world of technology has pushed me towards
-        pursuing a new professional path. TESTING
+        pursuing a new professional path.
       </p>
       <p className="font-normal text-lg mt-4 lg:text-xl">
         I&#39;ve dedicated myself to self-learning and continuous improvement,
